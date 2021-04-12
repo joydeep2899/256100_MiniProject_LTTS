@@ -7,11 +7,11 @@ double generate_sine_wave(double time, double frequency, double amplitude)
     fp=fopen("wave.txt","w");
     for(double i=0;i<=10;i=i+0.001)
     {
-        y=generate_amplitude(i,frequency,amplitude);
+        y=generate_amplitude_sine(i,frequency,amplitude);
         fprintf(fp,"%lf\t%lf\n",i,y);
     }
 }
-double generate_amplitude(double time, double frequency, double amplitude)
+double generate_amplitude_sine(double time, double frequency, double amplitude)
 {
     double T=1/frequency;
     time=2*M_PI*frequency*time;

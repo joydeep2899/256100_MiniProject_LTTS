@@ -8,11 +8,11 @@ double generate_triangular_wave(double time, double frequency, double amplitude)
     fp=fopen("wave.txt","w");
     for(double i=0;i<=10;i=i+0.001)
     {
-        y=generate_amplitude(i,slope1,slope2,frequency,amplitude);
+        y=generate_amplitude_triangle(i,slope1,slope2,frequency,amplitude);
         fprintf(fp,"%lf\t%lf\n",i,y);
     }
 }
-double generate_amplitude(double time, double slope1, double slope2, double frequency, double amplitude)
+double generate_amplitude_triangle(double time, double slope1, double slope2, double frequency, double amplitude)
 {
     double T=1/frequency;
     int cycle = (int)(2*time/T);
