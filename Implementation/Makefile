@@ -40,7 +40,7 @@ DOCUMENTATION_OUTPUT = documentation/html
 $(PROJECT_NAME):all
 
 # Run the target even if the matching name exists
-.PHONY: run test all
+.PHONY: run clean test doc all
 
 all: $(SRC) $(BUILD)
 	gcc $(SRC) $(INC) -o $(PROJECT_OUTPUT).out -lm
@@ -55,7 +55,7 @@ run:$(PROJECT_OUTPUT).out
 
 # Build and run the unit tests
 test:$(BUILD)
-	gcc $(TEST_SRC) $(INC) -o $(TEST_OUTPUT) -lm
+	gcc $(TEST_SRC) $(INC) -o $(TEST_OUTPUT) 
 	./$(TEST_OUTPUT)
 #Coverage
 coverageCheck:$(BUILD)
