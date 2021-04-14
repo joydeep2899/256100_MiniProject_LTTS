@@ -28,5 +28,8 @@ jobs:
          sudo apt-get -y install valgrind
          sudo apt-get -y install libcunit1 libcunit1-doc libcunit1-dev 
       
+      - name: make test
+        run: make -C Implementation/test
+
       - name: Valgrid
         run: valgrind ./Implementation/build/Test_function_generator.out
