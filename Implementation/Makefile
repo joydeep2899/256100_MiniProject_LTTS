@@ -1,23 +1,29 @@
 # Name of the project
-PROJECT_NAME = Calculator
+PROJECT_NAME = function_generator
 
 # Output directory
 BUILD = build
 
 # All source code files
-SRC = project_main.c\
-src/calculator_operations.c
+SRC = function_generator.c\
+src/generate_sine_wave.c\
+src/generate_square_wave.c\
+src/generate_triangular_wave.c\
+src/generate_sawtooth_wave.c
 
 # All test source files
-TEST_SRC = src/calculator_operations.c\
-test/test_calculator_operations.c\
-unity/unity.c\
+TEST_SRC = src/generate_sine_wave.c\
+src/generate_square_wave.c\
+src/generate_triangular_wave.c\
+src/generate_sawtooth_wave.c\
+test/test_function_generator.c\
+unity/unity.c
 
 TEST_OUTPUT = $(BUILD)/Test_$(PROJECT_NAME).out
 
 # All include folders with header files
 INC	= -Iinc\
--Iunity\
+-Iunity
 
 #Library Inlcudes
 #if working with CUnit 
@@ -34,13 +40,13 @@ DOCUMENTATION_OUTPUT = documentation/html
 $(PROJECT_NAME):all
 
 # Run the target even if the matching name exists
-.PHONY: run clean test doc all
+.PHONY: run test all
 
 all: $(SRC) $(BUILD)
 	gcc $(SRC) $(INC) -o $(PROJECT_OUTPUT).out
 
 # Call `make run` to run the application
-run:$(PROJECT_NAME)
+run:$(PROJECT_OUTPUT).out
 	./$(PROJECT_OUTPUT).out
 
 # Document the code using Doxygen
