@@ -33,17 +33,17 @@ int main()
  
 void test_sine(void)
 {
-
+  TEST_ASSERT_EQUAL(10,generate_sine_wave(1,10));
 }
 void test_square(void)
 {
-
+  TEST_ASSERT_EQUAL(5001,generate_square_wave(1,10));
 }
 void test_sawtooth(void)
 {
-
+  TEST_ASSERT_EQUAL(8,generate_sawtooth_wave(1,10)); 
 }
 void test_triangle(void)
 {
-
+  TEST_ASSERT_EQUAL(10,generate_triangular_wave(1,10));
 }
