@@ -2,8 +2,7 @@
 
 Visit [Pages for Report -optional](using github.io option)
 
-Build | Code Quality | Unity | [Git Inspector](using github.io option)
-------|----------|-------|--------------
+
 [![Build Status](https://github.com/MeghanaMeda/256100_MiniProject_LTTS/actions/workflows/c-cpp.yml/badge.svg)](https://github.com/MeghanaMeda/256100_MiniProject_LTTS/actions/workflows/c-cpp.yml)|
 [![Code Quality - Static Code - Cppcheck](https://github.com/MeghanaMeda/256100_MiniProject_LTTS/actions/workflows/cppcheck.yml/badge.svg)]
 (https://github.com/MeghanaMeda/256100_MiniProject_LTTS/actions/workflows/cppcheck.yml)|
