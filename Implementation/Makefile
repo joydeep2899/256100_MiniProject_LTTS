@@ -55,7 +55,7 @@ run:$(PROJECT_OUTPUT).out
 
 # Build and run the unit tests
 test:$(BUILD)
-	gcc $(TEST_SRC) $(INC) -o $(TEST_OUTPUT) 
+	gcc $(TEST_SRC) $(INC) -o $(TEST_OUTPUT) -lm
 	./$(TEST_OUTPUT)
 #Coverage
 coverageCheck:$(BUILD)
