@@ -1,11 +1,10 @@
 # SDLC Activity Based Learning
 
 Visit [Pages for Report -optional](using github.io option)
-
-
+Build | Code Quality | Unity | [Git Inspector](using github.io option)
+------|----------|-------|--------------
 [![Build Status](https://github.com/MeghanaMeda/256100_MiniProject_LTTS/actions/workflows/c-cpp.yml/badge.svg)](https://github.com/MeghanaMeda/256100_MiniProject_LTTS/actions/workflows/c-cpp.yml)|
-[![Code Quality - Static Code - Cppcheck](https://github.com/MeghanaMeda/256100_MiniProject_LTTS/actions/workflows/cppcheck.yml/badge.svg)]
-(https://github.com/MeghanaMeda/256100_MiniProject_LTTS/actions/workflows/cppcheck.yml)|
+[![Code Quality - Static Code - Cppcheck](https://github.com/MeghanaMeda/256100_MiniProject_LTTS/actions/workflows/cppcheck.yml/badge.svg)]|
 [![Unity](https://github.com/MeghanaMeda/256100_MiniProject_LTTS/actions/workflows/unity.yml/badge.svg)](https://github.com/MeghanaMeda/256100_MiniProject_LTTS/actions/workflows/unity.yml)|
 [![Git Inspector](https://github.com/MeghanaMeda/256100_MiniProject_LTTS/actions/workflows/gitinspector.yml/badge.svg)](https://github.com/MeghanaMeda/256100_MiniProject_LTTS/actions/workflows/gitinspector.yml)|
 [![Dynamic Code Analysis Valgrind](https://github.com/MeghanaMeda/256100_MiniProject_LTTS/actions/workflows/CodeQuality_Dynamic.yml/badge.svg)](https://github.com/MeghanaMeda/256100_MiniProject_LTTS/actions/workflows/CodeQuality_Dynamic.yml)
