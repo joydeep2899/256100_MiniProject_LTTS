@@ -13,5 +13,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+    - name: apt install dependency
+      run: sudo apt-get -y install gnuplot
     - name: make
       run: make -C Implementation/ all
